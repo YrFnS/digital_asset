@@ -242,3 +242,12 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doctype_js = {
+    "Digital Asset Assignment": "/digital_assets/digital_assets/doctype/digital_asset_assignment/digital_asset_assignment.js"
+}
+
+doc_events = {
+    "Digital Asset Assignment": {
+        "before_save": "digital_assets.api.update_asset_status"
+    }
+}
